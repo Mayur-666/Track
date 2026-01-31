@@ -1,7 +1,7 @@
 import os from "node:os";
 import path from "node:path";
 import { mkdir, writeFile } from "node:fs/promises";
-import { handleError } from "./errorHandler.js";
+import handleError from "./ErrorHandler.js";
 import { DB_NAME, DIR_NAME, INITIAL_DATA } from "./constants.js";
 
 const dataDir = path.join(os.homedir(), DIR_NAME); // makes .track folder in home dir.

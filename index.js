@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import initializeDB from "./utils/initializeDB.js";
-import handleError from "./utils/errorHandler.js";
+import handleError from "./utils/ErrorHandler.js";
 import {
   createTask,
   deleteTask,
