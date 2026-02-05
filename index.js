@@ -19,7 +19,7 @@ const command = args[0];
 
 // maps commands to action handlers
 const commandMap = {
-  add: () => createTask,
+  add: () => createTask(args.slice(1).join(" ")),
   update: () => updateTask,
   list: () => readTask,
   delete: () => deleteTask,
